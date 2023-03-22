@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://blog.ai-idea.cc
+
+# Sitemaps
+Sitemap: https://blog.ai-idea.cc/sitemap.xml

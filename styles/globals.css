@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./scroll-bar.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(23, 23, 17);
+  color: white;
+}
+
+@layer base {
+  :root {
+    --color-primary: #1e90ff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(23, 23, 17);
+    color: white;
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+    color-scheme: light;
+  }
+}
