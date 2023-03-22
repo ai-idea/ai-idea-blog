@@ -27,6 +27,9 @@ export const postDetailsToPostListItem = (
 };
 
 const loadPostsData = async (): Promise<PostDetails[]> => {
+  if(!fs.existsSync(PostsRootDirectory)){
+    return Promise.resolve([]);
+  }
   const all_posts = (
     await Promise.all(
       fs
